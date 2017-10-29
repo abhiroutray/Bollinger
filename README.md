@@ -1,2 +1,4 @@
-# bollinger
-Analysis of financial trends using Bollinger bands
+# Bollinger
+Analysis of financial trends using Bollinger bands. This is a project created by Abhishek Routray for HackTX 2017. The script allows you to enter a stock by specifying its ticker, then it pulls historical adjusted closing price data through the Quandl API. It then creates Bollinger bands - a measure of volatility in a stock based on creating an upper bound and lower bound around the moving average of the stock. I improved on this by using an Exponentially Weighted Moving Average which gives more bias to recent dates, which allows us to account for the current economic feelings more accurately, rather than a Simple Moving Average which gives every date an equal weighting.
+
+To use the script, create a Bollinger object by specifying the ticker and an optional start date (by default it uses the past 60 days) in the format 'YYYY-MM-DD'.
